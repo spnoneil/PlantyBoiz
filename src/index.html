@@ -1,23 +1,44 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<html>
 
 <head>
-  <title>Shape Tracker</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="plant.js"></script>
+  <title>Grow Your Plant</title>
 </head>
 
 <body>
-  <img src="assets/images/kitten.jpg" alt="such a pup!">
-  <h3>Enter three lengths to determine if they can make a triangle.</h3>
-  <form id="triangle-checker-form">
-    <label for="length1">Enter a number:</label>
-    <input id="length1" type="number">
-    <label for="length2">Enter a number:</label>
-    <input id="length2" type="number">
-    <label for="length3">Enter a number:</label>
-    <input id="length3" type="number">
-    <button type="submit">Submit</button>
-  </form>
-  <ul id="response"></ul>
+  <div class="container">
+    <div class="grow-buttons">
+      <button class="btn-success" id="bluefood">Add soil</button>
+      <button class="btn-success" id="greenfood">Add super food</button>
+      <button class="btn-success" id="yuckyfood">Add super(bad) food</button>
+      <button class="btn-success" id="water">Add water</button>
+      <button class="btn-success" id="superwater">Add super water</button>
+      <button class="btn-success" id="heal">Heal dat plant</button>
+      <button class="btn-success" id="show-soil-state">Current Stats</button>
+      <button class="btn-success" id="show-water-state">Current Stats</button>
+    </div>
+    <h1>Your Plant's Values</h1>
+    <h3>
+      <div id="soil-value">0</div>
+      <div id="water-value">0</div>
+    </h3>
+    <div class="grow-buttons">
+      <button class="btn-success" id="bluefood2">Add soil2</button>
+      <button class="btn-success" id="greenfood2">Add super food2</button>
+      <button class="btn-success" id="yuckyfood2">Add super(bad) food2</button>
+      <button class="btn-success" id="water2">Add water2</button>
+      <button class="btn-success" id="superwater2">Add super water2</button>
+      <button class="btn-success" id="show-soil-state2">Current Stats2</button>
+      <button class="btn-success" id="show-water-state2">Current Stats2</button>
+    </div>
+    <h1>Your 2nd Plant's Values</h1>
+    <h3>
+      <div id="soil-value2">0</div>
+      <div id="water-value2">0</div>
+    </h3>
+    <p id="action-text"></p>
+  </div>
 </body>
 
 </html>
